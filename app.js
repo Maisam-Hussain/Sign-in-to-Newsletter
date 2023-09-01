@@ -40,9 +40,9 @@ app.post("/", function(req, res)
   };
   const jsonData = JSON.stringify(data);
   const API_KEY = process.env.API_KEY;
-  const LIST_ID = "bc2c467492";
+  // const LIST_ID = "bc2c467492";
   // https://us14.admin.mailchimp.com/lists/lists_id
-  const url = `https://us14.api.mailchimp.com/3.0/lists/${LIST_ID}`;
+  const url = `https://us14.api.mailchimp.com/3.0/lists/bc2c467492`;
 
   const options = 
   {
