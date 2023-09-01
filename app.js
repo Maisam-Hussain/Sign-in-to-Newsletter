@@ -40,9 +40,8 @@ app.post("/", function(req, res)
   };
   const jsonData = JSON.stringify(data);
   const API_KEY = process.env.API_KEY;
-  // const LIST_ID = "bc2c467492";
-  // https://us14.admin.mailchimp.com/lists/lists_id
-  const url = `https://us14.api.mailchimp.com/3.0/lists/bc2c467492`;
+
+  const url = "https://us14.api.mailchimp.com/3.0/lists/bc2c467492";
 
   const options = 
   {
@@ -75,9 +74,6 @@ app.post("/failure", function(req,res)
 {
   res.redirect("/");
 });
-
-// My API Key:9e201f7a05cdd6f2ce9e5562cada12b7-us14
-// Audience ID/List ID:bc2c467492
 
 app.listen(3000, function(){
   console.log("Server is running on Port:3000");
